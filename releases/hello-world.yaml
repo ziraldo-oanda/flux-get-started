@@ -10,6 +10,6 @@ metadata:
 spec:
   releaseName: hello-world
   chart:
-    git: git@github.com:ziraldo-oanda/hello-world
+    git: git@github-ent.dev.oanda.com:ziraldo/hello-world
     path: chart/hello-world
     ref: master
