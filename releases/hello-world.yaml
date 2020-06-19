@@ -1,0 +1,15 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: hello-world
+  namespace: demo
+  annotations:
+    fluxcd.io/automated: "true"
+    fluxcd.io/tag.chart-image: semver:~5.0
+spec:
+  releaseName: hello-world
+  chart:
+    git: git@github-ent.dev.oanda.com:ziraldo/hello-world
+    path: chart/hello-world
+    ref: master
