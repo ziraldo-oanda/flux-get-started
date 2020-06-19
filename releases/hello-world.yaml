@@ -5,8 +5,8 @@ metadata:
   name: hello-world
   namespace: demo
   annotations:
-    fluxcd.io/automated: "true"
-    fluxcd.io/tag.chart-image: semver:~5.0
+    fluxcd.io/automated: "false"
+    # fluxcd.io/tag.chart-image: semver:~5.0
 spec:
   releaseName: hello-world
   chart:
